@@ -2,20 +2,24 @@ import { Component } from "react";
 import { connect } from "react-redux";
 
 class ListComments extends Component {
-
   render() {
     const { comments, result } = this.props;
     return (
       <div>
-        { result &&
-          comments.map((comment) => 
-          <div key={comment.id}>
-            <h3>{comment.name}</h3>
-            <h6>{comment.email}</h6>
-            <p>{comment.body}</p>
-          </div>
-          )
-        }
+        <h1 className="text-center pt-5 text-3xl font-bold">Comentários</h1>
+        <div className="m-4">
+          {result &&
+            comments.map((comment) => (
+              <div
+              key={comment.id}
+              className="py-4 text-center"
+              >
+                <p className="font-medium text-center">{comment.name}</p>
+                <p className="text-sm font-light text-center">{comment.email}</p>
+                <p className="text-sm text-center px-5">{comment.body}</p>
+              </div>
+            ))}
+        </div>
       </div>
     );
   }
