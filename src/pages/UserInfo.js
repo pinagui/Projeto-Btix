@@ -8,7 +8,7 @@ class UserInfo extends Component {
       <div className="mt-6">
         <div className="p-6 max-w-sm mx-auto rounded-xl shadow-lg flex items-center space-x-4">
           {result && (
-            <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg">
               <h1 className="text-4xl">{user.name}</h1>
               <span className="text-xl">
                 <p>{user.username}</p>
