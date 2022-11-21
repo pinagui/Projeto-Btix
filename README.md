@@ -5,6 +5,7 @@
 ### Tecnologias usadas
 - React JS
 - Tailwind CSS
+- Redux
 ---
 
 ### Após clonar o repositório rodar o comando
